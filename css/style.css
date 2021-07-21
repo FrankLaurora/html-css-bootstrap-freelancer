@@ -1,4 +1,8 @@
 /* common */
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -8,11 +12,84 @@ ul {
     list-style-type: none;
 }
 
-.star-ruler {
-    width: 50%;
-    border: 3px solid #000000;
-    background-color: #ffffff;
+.img_container {
+    position: relative;
+    max-width: 300px;
     margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img_container:hover::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '\f067';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: #1abc9c99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small_container {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+}
+
+.star-ruler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.star-ruler .small_rule {
+    width: 40% ;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.star-ruler i {
+    font-size: 1.5rem;
+}
+
+.light_rule {
+    background-color: #ffffff;
+}
+
+.dark_rule {
+    background-color: #2c3e50;
+}
+
+.light_text {
+    color: #ffffff;
+}
+
+.dark_text {
+    color: #2c3e50;
+}
+
+.gray_text {
+    color: #333333;
+}
+
+/* typo */
+.ms_h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.ms_h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* header */
@@ -23,14 +100,17 @@ header {
     top: 0;
     height: 50px;
     width: 100%;
+    z-index: 1;
 }
 
 header .container, header .row {
     height: 100%;
 }
 
-header ul li  {
+header ul li, header .ms_h3  {
     display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
 }
 
 /* hero */
@@ -38,6 +118,10 @@ header ul li  {
     margin-top: 50px;
     background-color: #1abc9c;
     color: #ffffff;
+}
+
+.img_container img {
+    width: 100%;
 }
 
 .img-placeholder {
@@ -62,7 +146,7 @@ main section {
 }
 
 .about p {
-    padding: 10px 20px;
+    padding: 10px auto;
 }
 
 /* footer */
