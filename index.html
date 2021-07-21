@@ -47,7 +47,7 @@
                         <div class="img_container">
                             <img src="img/avatar.svg" alt="portrait of Freelancer">
                         </div>
-                        <div class="ms_h2">START BOOTSTRAP</div>
+                        <div class="ms_h1">START BOOTSTRAP</div>
                         <div class="star-ruler light_text">
                             <span class="small_rule light_rule"></span>
                             <i class="fas fa-star"></i>
@@ -117,7 +117,11 @@
                         <div class="row">
                             <div class="col text-center">
                                 <div class="ms_h2">ABOUT</div>
-                                <div class="star-ruler"></div>
+                                <div class="star-ruler light_text">
+                                    <span class="small_rule light_rule"></span>
+                                    <i class="fas fa-star"></i>
+                                    <span class="small_rule light_rule"></span>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -134,7 +138,7 @@
                         </div>
                         <div class="row">
                             <div class="col text-center">
-                                <button type="button"><i class="fas fa-download"></i> Download</button>
+                                <button class="ms_btn ms_bg_transparent light_text" type="button"><i class="fas fa-download"></i> Download</button>
                             </div>
                         </div>
                     </div>
@@ -147,15 +151,25 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col text-center">
-                                <div class="ms_h2">
-                                    Contact me
+                                <div class="ms_h2 gray_text">
+                                    CONTACT ME
                                 </div>
-                                <div class="star-ruler"></div>
+                                <div class="star-ruler dark_text">
+                                    <span class="small_rule dark_rule"></span>
+                                    <i class="fas fa-star"></i>
+                                    <span class="small_rule dark_rule"></span>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <form action=""></form>
+                                <form action="">
+                                    <input type="text" name="name" id="contact_name" placeholder="Name">
+                                    <input type="email" name="email" id="contact_email" placeholder="Email Address">
+                                    <input type="tel" name="phone" id="contact_phone" placeholder="Phone Number">
+                                    <textarea name="message" id="contact_message" cols="30" rows="8" placeholder="Message"></textarea>
+                                    <input class="ms_btn ms_bg_green light_text" type="submit" value="Send">
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -171,43 +185,45 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 text-center">
-                        <h4>
-                            Location
-                        </h4>
+                        <div class="ms_h4">
+                            LOCATION
+                        </div>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            2215 John Daniel Drive Clark, MO <br>54243
                         </p>
                     </div>
                     <div class="col-sm-4 text-center">
-                        <h4>
-                            Around the Web
-                        </h4>
+                        <div class="ms_h4">
+                            AROUND THE WEB
+                        </div>
                         <div>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-linkedin-in"></i>
+                            <a href="https://www.facebook.com">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.google.com">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                            <a href="https://www.twitter.com">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-sm-4 text-center">
-                        <h4>
-                            About Freelancer
-                        </h4>
+                        <div class="ms_h4">
+                            ABOUT FREELANCER
+                        </div>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus labore sapiente, necessitatibus dignissimos sunt esse veniam quod doloribus!
+                            Freelance is a free to use, open source Bootstrap theme created by <a class="green_text" href="#">Start Bootstrap</a>.
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
         <footer class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        Copyright
-                    </div>
-                </div>
-            </div>
+            <span>Copyright &#169; Your Website 2019</span>
         </footer>
         <!-- /footer with top and bottom halves -->
 
